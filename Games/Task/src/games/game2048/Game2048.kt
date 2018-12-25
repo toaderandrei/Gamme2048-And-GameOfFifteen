@@ -1,9 +1,9 @@
 package games.game2048
 
-import board.Cell
-import board.Direction
-import board.GameBoard
-import board.createGameBoard
+import games.board.Cell
+import games.board.Direction
+import games.board.GameBoard
+import games.board.createGameBoard
 import games.game.Game
 
 /*
@@ -38,7 +38,7 @@ class Game2048(private val initializer: Game2048Initializer<Int>) : Game {
 }
 
 /*
- * Add a new value produced by 'initializer' to a specified cell in a board.
+ * Add a new value produced by 'initializer' to a specified cell in a games.board.
  */
 fun GameBoard<Int?>.addNewValue(initializer: Game2048Initializer<Int>) {
     val nextValue = initializer.nextValue(this)

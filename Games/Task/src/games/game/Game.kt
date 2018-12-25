@@ -1,6 +1,6 @@
 package games.game
 
-import board.Direction
+import games.board.Direction
 
 interface Game {
     fun initialize()

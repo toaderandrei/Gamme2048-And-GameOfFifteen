@@ -1,8 +1,6 @@
 package games.board
 
-import board.Cell
-import board.createSquareBoard
-import board.Direction.*
+import games.board.Direction.*
 import org.junit.Assert
 import org.junit.Test
 

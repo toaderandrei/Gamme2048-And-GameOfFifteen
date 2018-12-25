@@ -1,7 +1,7 @@
 package games.game2048
 
-import board.Cell
-import board.GameBoard
+import games.board.Cell
+import games.board.GameBoard
 import java.util.*
 
 interface Game2048Initializer<T> {
@@ -21,7 +21,7 @@ object RandomGame2048Initializer : Game2048Initializer<Int> {
      * that given value should be added to.
      * The value should be 2 for 90% cases, and 4 for the rest of the cases.
      * Use the 'generateRandomStartValue' function above.
-     * If the board is full return null.
+     * If the games.board is full return null.
      */
     override fun nextValue(board: GameBoard<Int?>): Pair<Cell, Int>? {
 

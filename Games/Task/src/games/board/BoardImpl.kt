@@ -1,6 +1,5 @@
-package board
+package games.board
 
-import board.Direction.*
 import java.lang.IllegalArgumentException
 import java.util.function.Consumer
 

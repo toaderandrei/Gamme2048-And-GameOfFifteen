@@ -1,7 +1,7 @@
 // drawing based on https://github.com/bulenkov/2048
 package games.ui
 
-import board.Direction
+import games.board.Direction
 import games.game.Game
 import java.awt.*
 import java.awt.event.KeyAdapter

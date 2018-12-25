@@ -1,7 +1,7 @@
 package games.gameOfFifteen
 
-import board.Direction
-import board.Direction.*
+import games.board.Direction
+import games.board.Direction.*
 import games.game.Game
 import org.junit.Assert
 import org.junit.Test
@@ -39,13 +39,6 @@ class TestGameOfFifteen {
             val initialBoard: String
     ) {
         val board: String = initialBoard.trimMargin()
-    }
-
-    @Test
-    fun testInitialState() {
-        val initializer = RandomGameInitializer()
-        Assert.assertNotEquals("The initial permutation must not be trivial",
-            (1..15).toList(), initializer.initialPermutation)
     }
 
     @Test

@@ -1,9 +1,9 @@
 package games.game2048
 
-import board.Cell
-import board.Direction
-import board.Direction.*
-import board.GameBoard
+import games.board.Cell
+import games.board.Direction
+import games.board.Direction.*
+import games.board.GameBoard
 import games.game.Game
 import org.junit.Assert
 import org.junit.Test
@@ -31,7 +31,7 @@ class TestGame2048 {
             // checking the state after initialization
             val first = moves[0]
             val second = moves[1]
-            Assert.assertEquals("Wrong result after board initialization " +
+            Assert.assertEquals("Wrong result after games.board initialization " +
                     "by '${first.value}' at ${first.cell} and " +
                     "'${second.value}' at ${second.cell}",
                     second.board, game.asString())
