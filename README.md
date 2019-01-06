@@ -1,4 +1,4 @@
-#Game
+# Game
 
 The goal of this assignment is to implement two games: Game 2048 and Game of Fifteen.
 
@@ -6,7 +6,7 @@ The games are partly implemented already, so your task is to finish the implemen
 
 After finishing the game you can play it yourself by running main function in ui/PlayGame2048 or ui/PlayGame2048.
 
-Game 2048
+## Game 2048
 
 If you're unfamiliar with Game 2048, you can first spend some time playing it online. (Don't forget about the assignment itself!)
 
@@ -27,7 +27,7 @@ Source: Game2048.kt; tests: TestMoveValuesInRowOrColumn.kt.
 Implement the remaining function moveValues, which moves all the elements in a board to a given direction following the rule games.
 Source: Game2048.kt; tests: TestMoveValues.kt.
 
-Game of Fifteen
+## Game of Fifteen
 
 The board for the game of Fifteen is filled randomly with numbers from 1 to 15 and one empty space. You can move the neighboring value to the empty space. The goal is to get the sorted sequence from 1 to 15.
 
