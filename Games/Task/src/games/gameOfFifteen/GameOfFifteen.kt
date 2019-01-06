@@ -30,21 +30,21 @@ class GameOfFifteen(private val initializer: GameOfFifteenInitializer) : Game {
 
     override fun hasWon(): Boolean {
         var k = 1
+        var won = true
         for (i in 1..board.width) {
             for (j in 1..board.width) {
                 var value = board[board.getCell(i, j)]
                 if (k <= 15) {
                     if (value != k) {
-                        return false
+                        won = false
+                        break
                     }
                     k++
-                } else if (value != null) {
-                    return false
                 }
             }
         }
 
-        return true
+        return won && get(board.width, board.width) == null
     }
 
     override fun processMove(direction: Direction) {
