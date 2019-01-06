@@ -1,4 +1,4 @@
-*Game*
+#Game
 
 The goal of this assignment is to implement two games: Game 2048 and Game of Fifteen.
 
