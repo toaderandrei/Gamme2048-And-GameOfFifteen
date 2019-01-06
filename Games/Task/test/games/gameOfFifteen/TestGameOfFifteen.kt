@@ -3,6 +3,7 @@ package games.gameOfFifteen
 import games.board.Direction
 import games.board.Direction.*
 import games.game.Game
+import games.newGameOfFifteen
 import org.junit.Assert
 import org.junit.Test
 
